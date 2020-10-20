@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Second Handin</title>
+</head>
+<body>
+
+    <div class="container my-5">
+        <h2>Recipes</h2>
+        <ul>
+        </ul>
+        <form>
+            <label for="recipe">Add new recipe:</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="recipe" placeholder="Title" required>
+                <input type="text" class="form-control" id="body" placeholder="Body" required>
+                <input type="checkbox" class="form-control" id="important" placeholder="important">
+                <div class="input-group-append">
+                    <input type="submit" value="add" class="btn btn-outline-secondary">
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+<script src="http://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+
+<script>
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAbOI8aC_4WSxjSvXz7P2A7epHfWnv4pEs",
+  authDomain: "secondhandin-cc9af.firebaseapp.com",
+  databaseURL: "https://secondhandin-cc9af.firebaseio.com",
+  projectId: "secondhandin-cc9af",
+  storageBucket: "secondhandin-cc9af.appspot.com",
+  messagingSenderId: "281772949460",
+  appId: "1:281772949460:web:289660a11b991bcd94a041",
+  measurementId: "G-BQ9ZXJMZST"
+};
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+
+</script>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
